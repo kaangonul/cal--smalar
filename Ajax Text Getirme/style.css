@@ -1,0 +1,226 @@
+/* Genel Stil */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Başlık (Header) */
+header {
+  background: linear-gradient(to right, #007bff, #00bfff);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Ana İçerik (Content) ve Yan İçerik (Aside) */
+#contentaside {
+  display: flex;
+  margin-top: 30px;
+}
+
+.content {
+  flex: 3;
+  padding-right: 30px;
+  border-right: 1px solid #ddd;
+}
+
+.content article {
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+  font-size: 1.8em;
+}
+
+.content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.content p {
+  margin: 15px 0;
+}
+
+.content a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Yan İçerik (Aside) */
+aside {
+  flex: 1;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+  margin-top: 0;
+  font-size: 1.6em;
+  color: #007bff;
+}
+
+aside p {
+  margin: 15px 0;
+  color: #555;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Alt Bilgi (Footer) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  margin-top: 40px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+/* Genel form stili */
+form {
+  width: 100%;
+  max-width: 600px; /* Maksimum genişlik ayarlama */
+  margin: 0 auto; /* Ortalamak için */
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: auto; /* Alanlar arasındaki boşluğu ayarlar */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Etiketlerin altına boşluk ekler */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Genişlik ayarlama */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Padding ve border genişliği içeriği etkilemez */
+}
+
+textarea {
+  height: 100px; /* Yükseklik ayarlama */
+  resize: vertical; /* Kullanıcının dikey olarak boyutlandırmasına izin verir */
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Hover efekti */
+}
+.resim {
+  width: 100px; /* Resmin genişliği */
+  height: 100px; /* Resmin yüksekliği */
+  border-radius: 50%; /* Yuvarlak yapar */
+  object-fit: cover; /* Resmin düzgün görünmesini sağlar */
+  border: 2px solid #007bff; /* Opsiyonel: kenarlık ekler */
+}
+
+.book-container {
+  display: flex;
+  gap: 30px;
+}
+
+.book-image {
+  width: 120px; /* Daha küçük boyut */
+  height: 120px; /* Daha küçük boyut */
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

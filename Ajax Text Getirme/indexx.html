@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaan Gönül Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Kaan Gönül Blog</h1>
+        <nav>
+          <a href="#">Anasayfa</a>
+          <a href="#">Hakkımda</a>
+          <a href="#">Blog</a>
+          <a href="#">İletişim</a>
+        </nav>
+      </header>
+
+      <div id="contentaside">
+        <div class="content">
+          <h2>Son Yazılar</h2>
+          <article>
+            <h3>İlk Blog Yazım</h3>
+            <p>
+              Bu benim ilk blog yazım. Burada blog yazmanın temellerinden
+              bahsedeceğim...
+            </p>
+            <a href="#">Devamını Oku</a>
+          </article>
+
+          <article>
+            <h3>Web Geliştirme İpuçları</h3>
+            <p>
+              Web geliştiricisi olarak kullanabileceğiniz bazı temel ipuçları ve
+              püf noktalar...
+            </p>
+            <a href="#">Devamını Oku</a>
+          </article>
+        </div>
+        <article>
+          <h3>Paylaşım için lütfen bilgilerinizi giriniz</h3>
+          <form id="temas" action="">
+            <div class="form">
+              <label for="ad">Ad Soyad:</label>
+              <input type="text" id="ad" name="ad" />
+              <br />
+              <label for="email">Email Adresiniz:</label>
+              <input type="email" id="email" name="email" />
+              <br />
+              <label for="telefon">Telefon Numaranız:</label>
+              <input type="text" id="telefon" name="telefon" />
+              <br />
+              <label for="mesaj">Soru/Yorum</label>
+              <textarea
+                id="mesaj"
+                name="mesaj"
+                placeholder="Görüş ve önerileriniz için teşekkürler"
+              ></textarea>
+              <br />
+              <button type="submit">Gönder</button>
+            </div>
+          </form>
+        </article>
+
+        <aside>
+          <h3>Hakkımda</h3>
+          <p>
+            Merhaba! Ben Kaan Gönül. Yazılım geliştiricisi ve teknoloji
+            meraklısıyım...
+          </p>
+          <img src="image.png" alt="Personality" class="resim" />
+
+          <h3>İlgili Bağlantılar</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kaan-g%C3%B6n%C3%BCl-002b57171/"
+                >LinkedIn Profilim</a
+              >
+            </li>
+            <li><a href="https://github.com/kaangonul">GitHub Hesabım</a></li>
+            <li>
+              <a href="https://github.com/kaangonul?tab=repositories"
+                >Projelerim</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <nav class="nav-bar">
+        <h3 style="text-align: center">Ürünler</h3>
+        <div class="book-container">
+          <div class="1">
+            <p>
+              <img
+                src="image3.jpeg"
+                class="rounded float-left"
+                alt="..."
+                class="image"
+              />
+            </p>
+          </div>
+          <div>
+            <p>
+              <img
+                src="image4.png"
+                class="rounded mx-auto d-block"
+                alt="..."
+                class="image"
+              />
+            </p>
+          </div>
+          <div>
+            <p>
+              <img
+                src="image5.jpg"
+                class="rounded float-right"
+                alt="..."
+                class="image"
+              />
+            </p>
+          </div>
+        </div>
+      </nav>
+      <footer>
+        <p>&copy; 2024 Kaan Gönül Blog. Tüm Hakları Saklıdır.</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
